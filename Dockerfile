@@ -15,7 +15,7 @@ RUN mkdir src \
 ADD ./src ./src
 RUN cargo build --release
 
-FROM alpine:3.15
+FROM alpine:3.24
 ARG APP=/app
 
 RUN apk add --update-cache \
